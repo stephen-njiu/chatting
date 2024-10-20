@@ -13,7 +13,7 @@ from database import get_user, save_message, fetch_latest_message, db_initialize
 load_dotenv("./.env")
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = os.getenv("FLASK_SECRETKEY")
+app.config["SECRET_KEY"] ="origin_fest" # os.getenv("FLASK_SECRETKEY")
 login_manager = LoginManager(app)
 socketio = SocketIO(app)
 

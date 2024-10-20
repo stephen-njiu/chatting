@@ -16,7 +16,10 @@ from user import User
 
 load_dotenv("./.env")  # .env file
 
-uri = os.getenv("MONGODB_URI")
+# uri = os.getenv("MONGODB_URI")
+
+uri = "mongodb+srv://lindensmark:origin_fest@jamiihub.cmnwy.mongodb.net/?retryWrites=true&w=majority&appName=jamiihub"
+
 
 # Create a new client and connect to the server
 client = MongoClient(uri)
